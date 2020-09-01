@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 
-namespace CleverCrow.Fluid.BTs.Examples {
-    public class FlagManager : MonoBehaviour {
+namespace CleverCrow.Fluid.BTs.Examples
+{
+    public class FlagManager : MonoBehaviour
+    {
         public static FlagManager current;
-        
+
         public GameObject flag;
         public GameObject goalRed;
         public GameObject goalBlue;
@@ -12,7 +14,8 @@ namespace CleverCrow.Fluid.BTs.Examples {
         [HideInInspector]
         public GameObject flagStart;
 
-        private void Awake () {
+        private void Awake()
+        {
             flagStart = flag;
             current = this;
         }
